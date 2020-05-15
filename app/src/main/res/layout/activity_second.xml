@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Second Activity"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <TextView
+        android:id="@+id/textView_fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="First Name"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="144dp" />
+
+    <TextView
+        android:id="@+id/textView_lname"
+        android:layout_width="136dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="60dp"
+        android:text="Second Name"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fname"
+        tools:layout_editor_absoluteX="129dp" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Back"
+        app:layout_constraintTop_toBottomOf="@+id/textView_lname"
+        tools:layout_editor_absoluteX="155dp" />
+</android.support.constraint.ConstraintLayout>
